@@ -12,7 +12,7 @@ public class HttpClient implements HttpAdapter {
             URLConnection connection = urlDaApi.openConnection();
             connection.connect();
         } catch (Exception e){
-            throw new RuntimeException("Erro ao enviar requisição HTTP", e)
+            throw new RuntimeException("Erro ao enviar requisição HTTP", e);
         }
     }
 }
